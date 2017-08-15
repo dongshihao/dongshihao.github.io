@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+## Voyager
 
-You can use the [editor on GitHub](https://github.com/dongshihao/dongshihao.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Feathures:
 
-### Markdown
+All HTML files are compressed (see `_layouts/compress.html`).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Post**
 
-```markdown
-Syntax highlighted code block
+All post settings can be changed. Example:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+---
+layout: post
+bg: '2016/background.jpg'
+title: "Post Heading"
+crawlertitle: "page title"
+summary: "post description"
+date: 2016-06-29
+tags : ['front-end']
+slug: post-url
+author: "Author"
+categories: posts
+---
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+`bg` is a path to background of your article. By default backgrounds are placed in the `assets/images` directory.
 
-### Jekyll Themes
+**Page**
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dongshihao/dongshihao.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+If page contains `active` tag, it will be show on site menu.
 
-### Support or Contact
+```
+---
+layout: page
+title: "About"
+permalink: /about/
+active: about
+---
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Archive**
+
+Archive page is sorting posts by tags. No more than one tag in one post.
+
+Good:
+
+```
+tags : ['front-end']
+```
+
+Bad:
+
+```
+tags : ['front-end', 'jekyll']
+```
+
+Don't forget to change `_config.yml`.
+
+**Relative paths**
+
+If your blog is not in the root directory, you can include images with a relative path. For example:
+
+```
+![my_image]({{ site.images | relative_url }}/image.jpg)
+```
+
+## Production environment
+
+Build for production:
+
+`JEKYLL_ENV=production jekyll build`
