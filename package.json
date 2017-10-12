@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo test",
     "preview": "echo preview",
+    "ci": "git add -A && git commit -m update",
     "preversion": "npm test && npm run preview",
-    "postversion": "echo push"
+    "postversion": "git push"
   },
   "repository": {
     "type": "git",
