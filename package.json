@@ -1,0 +1,21 @@
+{
+  "name": "dongshihao.github.io",
+  "version": "1.0.1",
+  "description": "技术博客",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test",
+    "preview": "echo preview",
+    "preversion": "echo 'push && preversion'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongshihao/dongshihao.github.io.git"
+  },
+  "author": "dongshihao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongshihao/dongshihao.github.io/issues"
+  },
+  "homepage": "https://github.com/dongshihao/dongshihao.github.io#readme"
+}
