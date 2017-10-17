@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo 单测和集成测试待建设",
     "preview": "jekyll serve",
-    "ci": "git add -A && git commit -m 'add home page'",
+    "ci": "git add -A && git commit -m 'change img'",
     "postversion": "git push"
   },
   "repository": {
