@@ -4,10 +4,9 @@
   "description": "技术博客",
   "main": "index.js",
   "scripts": {
-    "test": "echo test",
-    "preview": "echo preview",
-    "ci": "git add -A && git commit -m update",
-    "preversion": "npm test && npm run preview",
+    "test": "echo 单测和集成测试待建设",
+    "preview": "jekyll serve",
+    "ci": "git add -A && git commit -m 'add home page'",
     "postversion": "git push"
   },
   "repository": {

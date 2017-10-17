@@ -3,16 +3,15 @@
   <input type="checkbox" id="menu-checkbox" />
 
   <nav class="center-wrapper nav-main">
-
-    <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
+    <a {% if !page.permalink %}{% else %}class="blog-logo"{% endif %} href="{{ site.baseurl }}/home">文章</a>
     {% for my_page in site.pages %}
       {% if my_page.active %}
-        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        <a {% if page.permalink==my_page.permalink %}class="blog-logo"{% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        <!-- <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> -->
       {% endif %}
     {% endfor %}
 
-    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+    <!-- <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> -->
 
     <label for="menu-checkbox" class="toggle-button" data-open="☰" data-close="☰" onclick></label>
   </nav>
