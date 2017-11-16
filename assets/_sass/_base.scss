@@ -13,7 +13,7 @@
 
 
 body {
-  font: normal 17px/1.5 'PT Serif', "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font: normal 14px/1.5 'PT Serif', "Helvetica Neue", "Helvetica", Arial, sans-serif;
   width: 100%;
   height: 100%;
   background: #fdfdfd;
@@ -48,6 +48,19 @@ h6 { font-size: .6em; }
   margin: .67em 0;
   a:link, a:hover, a:focus, a:visited {
     color: #fff;
+  }
+}
+
+.nav-head {
+  text-align: center;
+  padding-top: 15px;
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+  }
+  a:hover {
+    text-decoration: underline; 
   }
 }
 
@@ -218,7 +231,7 @@ article a.btn {
 
 #switcher {
   width: 10%;
-  cursor: crosshair;
+  cursor: w-resize;
   height: 100vh;
   position: absolute;
   right: 0;
@@ -226,13 +239,15 @@ article a.btn {
   z-index: 400;
   display: none;
 }
-
+.aside-left #switcher {
+  cursor: e-resize;
+}
 .transition-divs {
   transition: all .5s ease-in-out 0s;
 }
 
 .aside-left {
-  left: -33% !important;
+  left: -22% !important;
 }
 
 .centering {

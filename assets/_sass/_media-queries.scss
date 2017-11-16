@@ -3,7 +3,7 @@
 * ========================================================================== */
 
 @media screen and (min-width: $md-break-point) {
-  body { font-size: 17px; }
+  body { font-size: 14px; }
   h1 { font-size: 2em; }
   h2 { font-size: 1.8em; }
   h3 { font-size: 1.6em; }
@@ -25,9 +25,6 @@
   }
 
   .nav-main .blog-logo {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
     width: auto;
   }
 

@@ -3,7 +3,10 @@
 {% else %}
   <aside class="sidebar" role="note" style="background-image: url({{ site.images | relative_url }}/bg.svg)">
 {% endif %}
-
+  <div class="nav-head">
+    <a href="/">站点主页</a>
+    <a href="/home">文章主页</a>
+  </div>
   <div class="cover">
 
     <div class="cover-text">
@@ -28,6 +31,5 @@
     </div>
 
   </div>
-
   <div id="switcher"></div>
 </aside>

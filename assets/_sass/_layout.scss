@@ -30,7 +30,7 @@ a {
   left: 0;
   top: 0;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #menu-checkbox:checked + .nav-main a:not(.blog-logo) {
@@ -104,9 +104,6 @@ a {
   padding: 0 1rem;
   text-transform: uppercase;
   a {
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
     line-height: 50px;
     margin: auto;
     color: #333;
@@ -128,11 +125,8 @@ a {
   .blog-logo {
     width: 100%;
     line-height: 50px;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
     border-bottom: 0;
     text-align: center;
     font-weight: bold;
