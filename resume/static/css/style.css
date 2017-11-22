@@ -190,7 +190,7 @@ progress::-moz-progress-value {
     margin: 0 auto;
     margin-top:20px;
     margin-bottom: 10px;
-    background-image:url('https://avatars1.githubusercontent.com/u/6845419?s=400&u=8f68184bf603eff3a0ad8298f3d2fc5ceef8f0f8&v=4');
+    background-image:url('../image/photo.jpg');
     background-size: 100%;
     background-position:center;
     border-radius:50%;
@@ -308,4 +308,18 @@ ul li{
     .container {
         width: 1050px;
     }
+}
+.custom-a {
+    text-decoration: none;
+    color: #666;
+}
+.custom-a-c {
+    text-decoration: none;
+    color: #2196F3;
+}
+.h3-tag {
+    font-size: 14px;
+}
+.h3-subhead {
+    font-size: 16px;
 }
