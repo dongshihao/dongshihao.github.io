@@ -14,7 +14,7 @@ active: about
 
 就职：百度-前端技术部-MIP开源项目组
 
-擅长：javascript && node.js && 工程化 && 开源建设
+擅长：javascript && H5/CSS3 && 工程化 && 网页性能与加速
 
 参与开源项目：
 - [MIP](https://www.mipengine.org/) 
@@ -24,4 +24,6 @@ active: about
 - QQ：630434698 (注明来自博客)
 - [weibo](https://weibo.com/shdongwb) 
 - [github](https://github.com/dongshihao) 
+- [我的简历](/resume) 
+
 
