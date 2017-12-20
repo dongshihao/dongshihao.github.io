@@ -24,6 +24,5 @@ active: about
 - QQ：630434698 (注明来自博客)
 - [weibo](https://weibo.com/shdongwb) 
 - [github](https://github.com/dongshihao) 
-- [我的简历](/resume) 
 
 
